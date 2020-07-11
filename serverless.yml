@@ -1,4 +1,4 @@
-service: candidate-service
+service: candidate-xray-dynamo
 
 provider:
   name: aws

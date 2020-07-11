@@ -4,6 +4,7 @@ const uuid = require("uuid");
 const awsXRay = require("aws-xray-sdk");
 
 const AWS = awsXRay.captureAWS(require('aws-sdk'));
+//const AWS = require('aws-sdk');
 AWS.config.setPromisesDependency(require("bluebird"));
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
